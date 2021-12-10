@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>admin</title>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div style="background: gray; padding:24.5px 10px; background: rgb(21, 23, 36);" >
+                <label style="font-weight: 700; color: white; padding-left: 10px; font-size: 18px;">Admin Area</label>
+            </div>
+
+            <div style="padding-left: 20px; padding-top: 30px;">
+                <label style="color: rgb(143, 143, 143); ">Geral</label>
+            </div>
+            
+            <div class="menus">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-laptop"></i> Apostas</a>
+                    </li>
+                </ul>
+            </div>
+        </div >
+
+        <div class="dash">
+            <nav>
+                <div class="welcome">
+                    <label>Welcome <strong>Artur Teixeira</strong></label>
+                </div>
+
+                <div class="admin">
+
+                    <div class="user">
+                        <a><img src="./src/img/pessoa.jpg" style="width: 40px; height:40px;" alt=""></a>
+                        <label id="nome"><a>Artur Teixeira </a></label>
+                        <!-- <label style="margin-left:10px;"><a><i class="fa fa-angle-down"></i></a></label> -->
+                        <div class="user-drop-down">
+                            <!-- <a href="">
+                                <span class="fa fa-user"></span>
+                                <span class="">Perfil</span>
+                            </a>
+                            <a href="">
+                                <span class="fa fa-inbox"></span>
+                                <span class="">Notificações</span>
+                            </a> -->
+                            <a>
+                                <span class="fa fa-sign-out"></span>
+                                <span @click="signOut()">Sign Out</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <div style="padding: 30px 40px; border-top: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231); background: #fff;" >
+                <label style="font-size: 26px; font-weight: 600;">Dashboard</label>
+            </div>
+
+            <div class="infos">
+                <div class="info"><label>Totoloto <p>14,000,000$00 ESC</p></label></div>
+                <div class="info"><label>Joker <p>6,000,000$00 ESC</p></label></div>
+                <div class="info"><label>Total <p>20,000,000$00 ESC</p></label></div>
+                
+            </div>
+
+            <div class="btns">
+                <button @click="createGame()">Criar Jogo</button>
+                <button @click="closeGame()" >Fechar Jogo</button>
+                <button @click="extractNums()">Extrair Números</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

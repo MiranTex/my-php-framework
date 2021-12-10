@@ -1,0 +1,24 @@
+{
+    "name": "dev/totoloto",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "db\\": "database"
+        },
+        "files": [
+            "app\\helpers\\helpers.php",
+            "app\\helpers\\validate.php",
+            "app\\helpers\\constantes.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Artur Teixiera",
+            "email": "arturmirantex@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^8.73",
+        "spatie/laravel-permission": "^5.4"
+    }
+}
